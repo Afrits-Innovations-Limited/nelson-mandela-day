@@ -1716,11 +1716,7 @@ body.boxed .body {
     position: absolute;
     bottom: 30px;
 }
-.page-banner2 {
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
-}
+
 .page-banner h1 {
     color: #fff;
     position: relative;
