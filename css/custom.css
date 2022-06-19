@@ -7,3 +7,7 @@
     /* background-position: center top; */
     background-size: cover;
 }
+.row.contact a, .row.contact address{
+font-size: 20px;
+
+}
