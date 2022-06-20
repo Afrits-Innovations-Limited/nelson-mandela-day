@@ -179,7 +179,8 @@ hmtl a {
     -ms-text-size-adjust: 100%;
 }
 a {
-    color: #5e5e5e;
+    /* color: #5e5e5e; */
+    color: #fff;
     text-decoration: none;
     cursor: pointer;
     -webkit-transition: all 0.3s ease 0.2s;
@@ -193,7 +194,8 @@ a:active,
 a:focus {
     text-decoration: none;
     outline: 0;
-    color: #5e5e5e;
+    /* color: #5e5e5e; */
+    color: #e36d01;
 }
 .basic-link:hover {
     opacity: 0.8;
@@ -212,6 +214,9 @@ a > img {
 }
 .lgray-bg {
     background: #f7f7f7;
+}
+.black-bg{
+    background: #000;
 }
 .dgray-bg {
     background: #454545;
@@ -304,7 +309,8 @@ h4,
 h5,
 h6 {
     margin: 0 0 15px 0;
-    color: #333;
+    color: #000;
+    /* color: #fff; */
     font-weight: 400;
     line-height: 1.5em;
     font-family: "Playfair Display", serif;
@@ -368,7 +374,8 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-    color: #333;
+    /* color: #000; */
+    color: #fff;
     text-decoration: none;
 }
 h1 .label,
@@ -526,8 +533,10 @@ ul.inline > li i.fa {
 ul.nav-list-primary > li a {
     display: block;
     padding: 8px;
-    border-bottom: 1px solid #eee;
-    color: #666666;
+    /* border-bottom: 1px solid #eee; */
+    border-bottom: 1px solid #666666;
+    /* color: #666666; */
+    color: #eee;
     text-decoration: none;
 }
 ul.nav-list-primary > li a:hover {
@@ -737,7 +746,7 @@ label {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 10px;
-    color: #333;
+    color: #000;
 }
 .meta-data {
     color: #aaa;
@@ -1097,7 +1106,7 @@ html[xmlns] .slides {
 }
 .flexslider .flex-prev,
 .flexslider .flex-next {
-    background: rgba(34, 34, 34, 0.7);
+    background: rgba(227, 109, 1, 0.9);
     color: #f9f9f9;
     margin-bottom: 10px;
     position: absolute;
@@ -1254,7 +1263,7 @@ html[xmlns] .slides {
     margin-left: 0;
 }
 .sort-source li a:hover {
-    color: #222;
+    color: #000;
 }
 .sort-destination {
     margin: 0;
@@ -1312,7 +1321,10 @@ html[xmlns] .slides {
 .causes-list-item h4 a:hover,
 .urgent-cause .post-title a:hover,
 .flex-caption-cause h3 a:hover {
-    color: #333;
+    color: #000;
+}
+.post-title a{
+    color: #000;
 }
 .parallax-icon-link {
     opacity: 0.2;
@@ -1340,9 +1352,15 @@ html[xmlns] .slides {
 /* ==================================================
    6. Site Structure & Appearance
 ================================================== */
+body .white{
+    background-color: #fafaff !important;
+    color: #000 !important;
+}
 body {
-    background-color: #fff;
-    color: #898989;
+    /* background-color: #fff; */
+    background-color: #000;
+    /* color: #898989; */
+    color: #fff;
     font-size: 15px;
     font-weight: 400;
     font-family: "Lato", sans-serif;
@@ -1351,7 +1369,7 @@ body {
     overflow-x: hidden;
 }
 body.boxed {
-    background-color: #333;
+    background-color: #000;
 }
 body.boxed .body {
     position: relative;
@@ -1401,7 +1419,7 @@ body.boxed .body {
 .header-style2 .site-header,
 .header-style3 .site-header {
     position: relative;
-    background: #fff;
+    background: #111;
 }
 .site-header .container {
     position: relative;
@@ -1412,8 +1430,11 @@ body.boxed .body {
     -ms-transition: background 0.3s 0.2s, box-shadow 0.3s 0.2s;
     -o-transition: background 0.3s 0.2s, box-shadow 0.3s 0.2s;
     transition: background 0.3s 0.2s, box-shadow 0.3s 0.2s;
-    background: rgba(255, 255, 255, 1);
+    /* background: rgba(255, 255, 255, 1); */
+    background: #000;
+    padding: 1rem 0;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+    
 }
 .header-style3 .is-sticky .site-header {
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
@@ -1468,7 +1489,7 @@ body.boxed .body {
 .sticky .header-info-col,
 .header-style2 .header-info-col,
 .header-style3 .header-info-col {
-    color: #333;
+    color: #000;
 }
 .dd-menu {
     margin: 0;
@@ -1489,6 +1510,21 @@ body.boxed .body {
     line-height: 50px;
     text-transform: uppercase;
     letter-spacing: 1px;
+    font-size: 16px;
+    margin-top: 5px;
+}
+.dd-menu > li > a::before {
+    content: " ";
+    position: absolute;
+    top: 80%;
+    left: 0;
+    background: #e36d01;
+    width: 0%;
+    height: 3px;
+    transition: all 0.3s ease-in-out 0s;  
+}
+.dd-menu > li > a:hover::before {
+    width: 100%;
 }
 .dd-menu > li:hover > a {
     color: #fff;
@@ -1502,7 +1538,7 @@ body.boxed .body {
 .sticky .dd-menu > li > a,
 .header-style2 .dd-menu > li > a,
 .header-style3 .dd-menu > li > a {
-    color: #333;
+    color: #fff;
 }
 .dd-menu > li ul {
     margin: 0;
@@ -1551,7 +1587,7 @@ body.boxed .body {
     color: #5e5e5e;
 }
 .dd-menu > li > ul > li > a:hover {
-    color: #333;
+    color: #000;
 }
 .dd-menu > li > ul > li > a:hover,
 .dd-menu > li > ul > li > ul > li > a:hover {
@@ -1603,7 +1639,7 @@ body.boxed .body {
     display: block;
     margin-bottom: 35px;
     font-size: 21px;
-    color: #333;
+    color: #000;
     text-align: left;
 }
 .dd-menu .megamenu-container ul li {
@@ -1639,7 +1675,7 @@ body.boxed .body {
 .topbar {
     min-height: 40px;
     color: #fff;
-    background: #333;
+    background: #000;
 }
 .topbar .header-info-col {
     border: 0;
@@ -1685,7 +1721,7 @@ body.boxed .body {
 .header-style2 #menu-toggle,
 .header-style3 #menu-toggle,
 .sticky #menu-toggle {
-    color: #333;
+    color: #000;
 }
 .header-style3 #menu-toggle {
     position: absolute;
@@ -1851,7 +1887,7 @@ body.boxed .body {
 }
 .featured-text strong {
     font-size: 30px;
-    color: #333;
+    color: #000;
     display: block;
     font-family: "Playfair Display", serif;
 }
@@ -1872,6 +1908,7 @@ body.boxed .body {
     padding: 75px 0;
     min-height: 400px;
 }
+
 .home .content {
     padding: 0;
 }
@@ -2275,7 +2312,7 @@ body.boxed .body {
     transform: rotate(-90deg);
     background: #fff;
     border-radius: 19px;
-    color: #333;
+    color: #000;
     font-size: 11px;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -2303,11 +2340,11 @@ body.boxed .body {
     margin-bottom: 0;
 }
 .site-footer {
-    background-color: #333;
+    background-color: #000;
     padding: 70px 0;
 }
 .site-footer-bottom {
-    background-color: #222;
+    background-color: #000;
     padding: 20px 0;
     color: #999;
 }
@@ -2649,6 +2686,9 @@ body.boxed .body {
 .content-block {
     padding-top: 10px;
     overflow-x: hidden;
+}
+.content-block h3 {
+    color: #e36d01 !important;
 }
 .single-event .content-block,
 .single-cause .content-block,
@@ -3113,7 +3153,7 @@ body.boxed .body {
 }
 .counters .timer {
     display: -block;
-    color: #333;
+    color: #000;
     font-weight: 700;
     font-size: 38px;
     margin-top: 5px;
@@ -3581,7 +3621,7 @@ body.boxed .body {
     -moz-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: #333;
+    background-color: #000;
     position: relative;
 }
 .touch .parallax,
@@ -3693,7 +3733,7 @@ body.boxed .body {
     margin-bottom: 0px;
     margin-left: -22px;
     padding: 20px 30px 6px 30px;
-    color: #333333;
+    color: #000;
     font-size: 54px !important;
     line-height: 42px !important;
 }
@@ -3776,12 +3816,19 @@ body.boxed .body {
     color: #fff;
 }
 .notice-bar {
-    background: #f7f7f7;
+    /* background: #f7f7f7; */
+    background: #000;
     padding: 30px 0;
     border-bottom: 1px solid #eee;
 }
+.label.label-default{
+    color: #fff;
+}
+.short.notice-bar-title a{
+    color: #000;
+}
 .notice-bar.dark {
-    background: #333;
+    background: #000;
 }
 .counter {
     text-align: right;
@@ -3797,7 +3844,7 @@ body.boxed .body {
     text-align: center;
     color: #fff;
     margin: 0 10px;
-    background: #4c6575;
+    background: #333;
 }
 .timer-col #days,
 .timer-col #hours,
@@ -3876,8 +3923,14 @@ body.boxed .body {
     .site-header .header-info-col {
         display: none;
     }
+    .dd-menu > li > a::before{
+        display: none;
+    }
 }
 @media only screen and (max-width: 992px) {
+    .dd-menu > li > a::before{
+        display: none;
+    }
     .pricing-column .features {
         margin-bottom: 0;
     }
@@ -3976,7 +4029,7 @@ body.boxed .body {
     .dd-menu > li > a {
         border-right: 0;
         font-size: 15px;
-        color: #333;
+        color: #000;
         padding-left: 25px;
         border-bottom: 1px solid #e6e6e6;
     }
@@ -4096,6 +4149,9 @@ body.boxed .body {
     }
     .grid-item .media-box {
         margin-bottom: 0;
+    }
+    .dd-menu > li > a::before{
+        display: none;
     }
     .pricing-table.six-cols > div {
         margin: 0 auto 30px;

@@ -120,7 +120,6 @@ a.list-group-item.active:focus,
 .widget_donations,
 .fblock-image-overlay,
 .overlay-accent,
-.page-banner,
 .tag-cloud a:hover,
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
@@ -195,6 +194,9 @@ a.list-group-item.active:focus,
 }
 .ibox-effect.ibox-dark .ibox-icon i:after {
     box-shadow: 0 0 0 2px #e36d01;
+}
+.page-banner{
+    background-color: #111;
 }
 @media only screen and (max-width: 992px) {
     .dd-menu > li:hover > a,
